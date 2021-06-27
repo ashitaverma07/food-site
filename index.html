@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASHITA'S FOOD STORE</title>
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="css/phone.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Baloo 2', cursive;
+            
+        }
+
+        /* upper layer waala part isme logo and baaki ki chize aagayi */
+        .logo{
+          display: flex;
+          align-items: center;
+          
+          position: relative;
+         
+        }
+        .logo::before{
+            content: "";
+            background-color:black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+
+        }
+        #logo{
+            height: 40px;
+            width: 40px;
+        }
+        .logo ul{
+            display: flex;
+           
+        }
+        .logo ul li{
+            list-style: none;
+            font-size: 20px;
+            
+        }
+        .logo ul li a{
+           display: block;
+           padding: 3px 22px;
+           margin: 3px;
+           text-decoration: none;
+           color: white;
+           
+        }
+        ul li a:hover{
+            color: rgb(12, 11, 11);
+            background-color: rgba(189, 182, 189, 0.589);
+            border-radius: 15px;
+        }
+
+        
+        /* website ka cover waala and chhota sa info waala part */
+        .container{
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            
+            align-items: center;
+            position: relative;
+            height: 300px;
+            color: white;
+        }
+        .container::before{
+            content: "";
+            background: url('https://2rdnmg1qbg403gumla1v9i2h-wpengine.netdna-ssl.com/wp-content/uploads/sites/3/2019/06/cropped-GettyImages-643764514-650x428.jpg')no-repeat center center/cover;
+            position: absolute;
+            height: 400px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.9;
+        }
+        .container h1{
+            font-size: 45px;
+            padding: 12px;
+            
+        }
+        .btn{
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: rgb(126, 110, 110);
+            font-size: 20px;
+            border-radius: 20px;
+        }
+        .btn:hover{
+            cursor: pointer;
+        }
+
+
+        /* RECIPIES waala part */
+        h4{
+            display: block;
+            height: 20px;
+            width: 286px;
+            margin: auto;
+            font-size: 45px;
+            margin-top: 70px;
+        }
+        .navbar{
+            
+            display: flex;
+            width: 100%;
+            margin: 40px auto;
+            
+        }
+        #burger{
+            height: 110px;
+            width: 153px;
+            display: block;
+            margin: auto;
+            border-radius: 59px;
+        }
+        .something{
+            border: 2px solid rgb(7, 7, 7);
+            background-color: grey;
+            width: 70%;
+            margin: 25px;
+            display: block;
+            border-radius: 57px;
+            text-align: center;
+            
+        }
+
+
+        /* Clients */
+        section{
+            display: flex;  
+            width: 100%;
+            height: 200px;
+            justify-content: center;
+            
+        }
+        #companies img{
+            height: 120px;
+            width: 120px;
+            position: relative;
+            margin: 2px;
+            padding: 15px;
+        }
+        .clients{
+            display: block;
+            width: 268px;
+            margin: auto;
+            font-size: 51px;
+        }
+        #companies::before{
+            content: "";
+            background: url('https://www.oom.com.sg/wp-content/uploads/2018/08/featured-image-21.jpg') no-repeat center center/cover;
+            position: absolute;
+            height: 199px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        #contact::before{
+            content: "";
+            background: url('https://assets.entrepreneur.com/content/3x2/2000/20191127190639-shutterstock-431848417-crop.jpeg?width=700&crop=2:1') no-repeat center center/cover;
+            position: absolute;
+            height: 560px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.6;
+        }
+        .h-primary{
+            font-size: 50px;
+            display: block;
+            width: 300px;
+            margin: auto;
+
+        }
+        /* final part */
+        #contact{
+            position: relative;
+        }
+        /* #companies{
+            display: flex; }*/
+          
+        /* .form-group{
+            font-size: 30px;
+            display: block;
+        } */
+        #contact-box{
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+            padding: 55px;
+        }
+        #contact-box input,
+        #contact-box textarea{
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 9px;
+            font-size: 1.1rem;
+        }
+        #contact-box form{
+            width: 70%;
+            height: 400px;
+        }
+        #contact-box label{
+            font-size:1.3rem ;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+
+        </style>
+</head>
+<body>
+    <div class="logo">
+        <div id="logo">
+            <img src="https://visualpharm.com/assets/323/Xbox%20B-595b40b85ba036ed117dbe3a.svg" alt="my logo">
+        </div>
+        
+
+        <ul class="upar">
+            <li><a href="https:www.google.com" target="_blank" >Home</a></li>
+            <li><a href="#" target="_blank" >Services</a></li>
+            <li><a href="#" target="_blank" >About</a></li>
+            <li><a href="#" target="_blank" >Contact us</a></li>
+        </ul>
+
+    </div>
+    <div class="container">
+        <h1>Welcome to Foodies Meals</h1>
+            <p1>Enjoy your meals with your loved ones and give us a chance to bring a smile on your face</p1>
+            <p1>Let's order, Let's celebrate!</p1>
+            <div><button class="btn">Order Now</button></div>
+    </div>
+    <h4>Our Services</h4>
+    <div class="navbar">
+        <div class="something">
+            <img id='burger' src="https://images2.minutemediacdn.com/image/upload/c_crop,h_1126,w_2000,x_0,y_181/f_auto,q_auto,w_1100/v1554932288/shape/mentalfloss/12531-istock-637790866.jpg" alt="">
+            <h3>Food Ordering</h3>
+            <p>
+                Order your food according to your choice and get vareity of choices, order multiples cuisines and get various offers on it 
+            </p>
+        </div>
+        <div class="something">
+            <img id='burger' src="https://cherylannmollan.files.wordpress.com/2014/03/ricettesenzaglutine-info.jpg" alt="">
+            <h3>Food Catering</h3>
+            <p>We also provide catering services at your desired venues at reasonable prices and provide hygeinic-services. </p>
+        </div>
+        <div class="something">
+            <img id='burger' src="https://img.theculturetrip.com/1440x807/smart/wp-content/uploads/2020/04/2ambdxg.jpg" alt="">
+            <h3>Bulk Ordering</h3>
+            <p>Also order in bulk for weddings, parties, college events and many more such events and get a future partnership.</p>
+        </div>
+        
+    </div>
+    <h1 class="clients">Our Clients</h1>
+    <section id="companies">
+        <img src="https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/apple-logo.png" alt="">
+        <img src="https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/google-logo.png" alt="">
+        <img src="https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/microsoft-logo.png" alt="">
+        <img src="https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/facebook-logo.png" alt="">
+        <img src="https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/coca-cola-logo.png" alt="">
+    </section>
+    <h1 class="h-primary">Contact Us</h1>
+    <section id="contact">
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type=" name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email"> Email: </label>
+                    <input type="email" id="email" placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phonenumber">Phone Number: </label>
+                    <input type=" phonenumber" id="phonenumber" placeholder="Enter Your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <!-- <input type=" name" id="name" placeholder="Enter Your Message"> -->
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your Message"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
